@@ -67,7 +67,7 @@ def stats(update, context):
 
 def start(update, context):
     buttons = ButtonMaker()
-    buttons.buildbutton("Repo", "https://telegra.ph/repo-chaiye-03-08"")
+    buttons.buildbutton("Repo", "https://telegra.ph/repo-chaiye-03-08")
     buttons.buildbutton("Report Group", "https://t.me/kindevils")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
